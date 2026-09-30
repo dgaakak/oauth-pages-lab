@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuth Pages Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Login</h1>
+
+    <p id="status">Você não está autenticado.</p>
+
+    <div id="login">
+      <a href="/oauth/login/google">Entrar com Google</a>
+      <a href="/oauth/login/github">Entrar com GitHub</a>
+    </div>
+
+    <div id="user" hidden>
+      <p id="user-info"></p>
+
+      <form method="post" action="/oauth/logout">
+        <button type="submit">Sair</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
